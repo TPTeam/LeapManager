@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Footage Manager DEMO</title>
+		<link rel="stylesheet" media="screen" href="stylesheets/main.css">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+		<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="javascripts/leap.js"></script>
+		<script type="text/javascript" src="javascripts/EventTarget.js"></script>
+		<script type="text/javascript" src="javascripts/LeapPointer.js"></script>
+		<script type="text/javascript" src="javascripts/LeapManager.js"></script>
+		
+	</head>
+	<body>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				
+				var leapdriver = LP_Manager.create();
+				leapdriver.start();
+
+				leapdriver.getStageFromCanvas = function(canvas) {
+					console.log("This is up to you :-)");
+
+					/*
+					*	LeapDriver expects this method returning a valid PIXI stage in order to make it interact with Leap
+					*/
+					
+					//return pg.stage;
+				}
+
+				leapdriver.addAllFocusable();
+				
+			})
+		</script>
+		
+		<div id="container" style="margin:auto;width:80%; height: 100%;">
+			<div id="prova1" data_playground_x="1" data_playground_y='2' class="leap_focusable left"  		style="background-color: blue; left: 30%;">
+				1 - 2
+			</div>
+			<div id="prova1b" data_playground_x="1" data_playground_y='1' class="leap_focusable left top"  		style="background-color: #0000bb;">
+				1 - 1
+			</div>
+			<div id="prova1c" data_playground_x="2" data_playground_y='1' class="leap_focusable left "  		style="background-color: #0000aa; top: 23%;">
+				2 - 1
+			</div>
+			<div id="prova1d" data_playground_x="3" data_playground_y='1' class="leap_focusable left "  		style="background-color: #00006f; top: 36%;">
+				3 - 1
+			</div>
+			<div id="prova5" data_playground_x="3" data_playground_y='2' class="leap_focusable left middle" 	style="background-color: #00aaaa; top: 50%; left:20%;">
+				3 - 2
+			</div>
+			<div id="prova2" data_playground_x="4" data_playground_y='2' class="leap_focusable left bottom" 	style="background-color: #00dd00; bottom: 20%; left: 20%;">
+				4 - 2
+			</div>
+			<div id="prova2a" data_playground_x="4" data_playground_y='3' class="leap_focusable bottom" 	style="background-color: #00bb00; left: 35%;">
+				4 - 3
+			</div>
+			<div id="prova7" data_playground_x="4" data_playground_y='4' class="leap_focusable center bottom" 	style="background-color: whitesmoke;">
+				4 - 4
+			</div>
+			<div id="prova4" data_playground_x="4" data_playground_y='5' class="leap_focusable bottom" 	style="background-color: #00bb00; right: 35%;">
+				4 - 5
+			</div>
+			<div id="prova4a" data_playground_x="4" data_playground_y='6' class="leap_focusable right bottom"  	style="background-color: #00dd00; bottom: 20%; right: 20%;">
+				4 - 6
+			</div>
+			<div id="prova6" data_playground_x="3" data_playground_y='6' class="leap_focusable right middle"  	style="background-color: #aa00aa; top: 50%; right: 20%;">
+				3 - 6
+			</div>
+			<div id="prova3b" data_playground_x="3" data_playground_y='7' class="leap_focusable right"  		style="background-color: #6a0000; top: 36%;">
+				3 - 7
+			</div>
+			<div id="prova3c" data_playground_x="2" data_playground_y='7' class="leap_focusable right "  		style="background-color: #6f0000;top: 23%;">
+				2 - 7
+			</div>
+			<div id="prova3d" data_playground_x="1" data_playground_y='7' class="leap_focusable right top "  		style="background-color: #bb0000;">
+				1 - 7
+			</div>
+			<div id="prova3" data_playground_x="1" data_playground_y='6' class="leap_focusable right"  		style="background-color: red; right: 30%">
+				1 - 6
+			</div>
+		</div>
+		
+	</body>
+</html>

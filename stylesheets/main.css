@@ -1,0 +1,52 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+}
+
+div {
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+}
+
+div.leap_focusable {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	color: #dddddd;
+	text-align: center;
+	font-size: 2em;
+	font-family: Arial;
+}
+
+div:hover,div.leap_hover {
+	border-color: black;
+}
+
+.left {
+	left: 10%;
+}
+
+.right {
+	right: 10%;
+}
+
+.top {
+	top: 10%;
+}
+
+.bottom {
+	bottom: 10%;
+}
+
+.middle {
+	top: 45%;
+}
+
+.center {
+	left: 45%;
+}
